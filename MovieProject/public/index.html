@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Orders by Marcus Lazaro</title>
+
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="/javascripts/main.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/index.css" >
+</head>
+
+<body>
+
+<h2>Orders, by Marcus Lazaro Spring 2023</h2>
+ 
+<input type="button" value="CREATE" onclick="buttonCreate()"  />
+<!--
+  The purpose of the CREATE button was to confirm that the correct data is
+  being created. I ended up just adding on the specified requirements for
+  the SUBMIT-ONE button onto what I had for the buttonCreate() method seeing
+  as there was little difference between the two besides needing using Fetch
+  for SUBMIT-ONE to push up to the server.
+-->
+<input type="button" value="SUBMIT-ONE" onclick="buttonCreate()"  />
+<input type="button" value="SUBMIT500" onclick="button500()"  />
+<input type="button" value="GENERATE 3" onclick="buttonThree()"  /><br><br>
+<input type="button" value="Filter: Sales made by 98053" onclick="filterStore98053()"  /><br>
+<input type="button" value="Filter: Sales for CD 123456" onclick="filterCD123456()"  />
+
+<h2>All of the Orders</h2>
+<div id="textString"> &nbsp &nbsp  &nbsp &nbsp StoreID: &nbsp &nbsp  &nbsp &nbsp SalesPersonID: &nbsp &nbsp  &nbsp &nbsp  CdID: &nbsp  &nbsp &nbsp  &nbsp PricePaid: &nbsp &nbsp  &nbsp &nbsp Date: </div>
+<div id="divOrderList"></div>
+</div>
+ 
+</body>
+
+</html>
